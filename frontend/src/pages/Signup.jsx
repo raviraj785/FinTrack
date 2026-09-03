@@ -24,7 +24,7 @@ function Signup({ onSignup, onLogin }) {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/auth/signup",
+        "/api/auth/signup",
         {
           method: "POST",
           headers: {
@@ -47,8 +47,6 @@ function Signup({ onSignup, onLogin }) {
       }
 
       alert("Account created successfully!");
-
-      // Go to Login page
       onSignup();
 
     } catch (error) {
@@ -68,13 +66,11 @@ function Signup({ onSignup, onLogin }) {
       <div className="auth-card">
 
         <div className="auth-logo">
-
           <div className="auth-logo-box">
             💳
           </div>
 
           <h1>FinTrack</h1>
-
         </div>
 
         <h2>Create Account</h2>
@@ -86,10 +82,7 @@ function Signup({ onSignup, onLogin }) {
         <form onSubmit={handleSubmit}>
 
           <div className="form-group">
-
-            <label>
-              Full Name
-            </label>
+            <label>Full Name</label>
 
             <input
               type="text"
@@ -100,14 +93,10 @@ function Signup({ onSignup, onLogin }) {
               }
               required
             />
-
           </div>
 
           <div className="form-group">
-
-            <label>
-              Email
-            </label>
+            <label>Email</label>
 
             <input
               type="email"
@@ -118,14 +107,10 @@ function Signup({ onSignup, onLogin }) {
               }
               required
             />
-
           </div>
 
           <div className="form-group">
-
-            <label>
-              Password
-            </label>
+            <label>Password</label>
 
             <input
               type="password"
@@ -136,14 +121,10 @@ function Signup({ onSignup, onLogin }) {
               }
               required
             />
-
           </div>
 
           <div className="form-group">
-
-            <label>
-              Confirm Password
-            </label>
+            <label>Confirm Password</label>
 
             <input
               type="password"
@@ -154,7 +135,6 @@ function Signup({ onSignup, onLogin }) {
               }
               required
             />
-
           </div>
 
           <button
@@ -170,7 +150,6 @@ function Signup({ onSignup, onLogin }) {
         </form>
 
         <p className="auth-switch">
-
           Already have an account?
 
           <button
@@ -179,7 +158,6 @@ function Signup({ onSignup, onLogin }) {
           >
             Login
           </button>
-
         </p>
 
       </div>
