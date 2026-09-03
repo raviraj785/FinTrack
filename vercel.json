@@ -5,10 +5,10 @@
       "routePrefix": "/",
       "framework": "vite"
     },
-    "backend": {
-      "entrypoint": "backend",
-      "routePrefix": "/api",
-      "framework": "express"
-    }
+   "backend": {
+  "entrypoint": "backend/server.js",
+  "routePrefix": "/api",
+  "framework": "express"
+}
   }
 }
