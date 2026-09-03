@@ -9,11 +9,9 @@ const budgetRoutes = require("./routes/budgetRoutes");
 
 const app = express();
 
-
 // Middleware
 app.use(cors());
 app.use(express.json());
-
 
 // MongoDB Connection
 mongoose
@@ -26,7 +24,6 @@ mongoose
     console.error(error.message);
   });
 
-
 // Auth Routes
 app.use("/api/auth", authRoutes);
 
@@ -36,7 +33,6 @@ app.use("/api/transactions", transactionRoutes);
 // Budget Routes
 app.use("/api/budgets", budgetRoutes);
 
-
 // Test Route
 app.get("/", (req, res) => {
   res.json({
@@ -44,10 +40,14 @@ app.get("/", (req, res) => {
   });
 });
 
+// Local Development Server
+if (require.main === module) {
+  const PORT = process.env.PORT || 5000;
 
-// Server
-const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
+  });
+}
 
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+// Export app for Vercel
+module.exports = app;
