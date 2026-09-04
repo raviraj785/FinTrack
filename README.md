@@ -32,7 +32,7 @@
 
 ## 🌐 Live Application
 
-### 🚀 [Open FinTrack](https://fin-track-enayve50v-raviraj785.vercel.app)
+### 🚀 [Open FinTrack](https://fin-track-one-mu.vercel.app/)
 
 FinTrack is deployed as a full-stack application with:
 
