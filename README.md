@@ -6,7 +6,7 @@
 
 <p align="center">
 
-  <a href="https://fin-track-enayve50v-raviraj785.vercel.app">
+  <a href="https://fin-track-one-mu.vercel.app/">
     <img src="https://img.shields.io/badge/Live%20Demo-FinTrack-success?style=for-the-badge&logo=vercel" />
   </a>
 
