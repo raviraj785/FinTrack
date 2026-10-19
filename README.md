@@ -142,3 +142,6 @@ Sort
   ↓
 Relevant Transactions
 
+## System Architecture
+
+![FinTrack Architecture](findiagram.png)
