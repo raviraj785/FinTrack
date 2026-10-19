@@ -141,4 +141,4 @@ Filter
 Sort
   ↓
 Relevant Transactions
-[![Architecture diagram of raviraj785/fintrack](https://gitdiagram.com/raviraj785/fintrack/diagram.png)](https://gitdiagram.com/raviraj785/fintrack?utm_source=readme&utm_medium=picture)
+
